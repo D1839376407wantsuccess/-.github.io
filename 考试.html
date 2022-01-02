@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我是帅哥</title>
+		<style type="text/css">
+			.sgy {
+				margin: 0 auto;
+				width: 1200px;
+			}
+			body {
+				background-color: #0099cc;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.title {
+				height: 82px;
+				background: url(素材/header-bg.jpg) repeat-x;
+			}
+			.title img {
+				height: 80px;
+			}
+			.rearch {
+				height: 45px;
+				width: 1200px;
+				font-size: 16px;
+				background-color: red;
+				text-align: center;
+				z-index: 1;
+				position: absolute;
+			}
+			.rearch ul li {
+				float: left;
+				list-style: none;
+				text-align: center;
+				font-size: 20px;
+				font-weight: 900;
+				line-height: 45px;
+				width: 150px;
+				height: 45px;
+			}
+			.rearch div {
+				height: 45px;
+				width: 900px;
+				margin: 0 auto;
+				background-color: crimson;
+			}
+			.rearch ul li ul li {
+				float: none;
+				display: none;
+				text-align: center;
+			}
+			.rearch ul li ul li a {
+				text-decoration: none;
+			}
+			.content {
+				width: 1200px;
+				height: 1255px;
+			
+			}
+			.rearch ul li:hover ul li {
+				display: block;
+				background-color: #FF0000;
+			}
+			.introduce {
+				width: 250px;
+				height: 500px;
+				text-align: center;
+				background-color: aliceblue;
+				float: left;
+				margin-top: 50px;
+				border: lpx solid white; 
+			}
+			.introduce div img {
+				width: 30px;
+				float: left;
+				
+			}
+			.introduce div {
+				margin-top: 9px;
+				padding-bottom: 4px;
+				width: 220px;
+				margin: 0 auto;
+				margin-bottom: 5px;
+				border-bottom: 4px solid #0099cc;
+			}
+			.introduce div h2 {
+				text-align: left;
+				margin-top: 6px;
+				font-size: 22px;
+				line-height: 28px;
+			}
+			.introduce table {
+				margin: 0 auto;
+			}
+			.introduce table tr:first-child td {
+				width: 180px;
+				height: 140px;
+			}
+			.introduce #sg1 {
+				height: 222px;
+				width: 250px;
+			}
+			
+			.content1 {
+				width: 920px;
+				float: left;
+				text-align: center;
+				font-size: 16px;
+				margin-left: 30px;
+				background-color: white;
+				margin-top: 50px;
+				border: lpx solid white;
+				
+			}
+			.content1 .tit {
+				line-height: 60px;
+			}
+			.content1 .author {
+				border: dashed 1px black;
+				margin-left: 20px;
+				margin-right: 20px;
+				padding: 10px;
+			}
+			.content1 .h33 {
+				margin-top: 40px;
+				font-weight: bolder;
+			}
+			.content1 .last {
+				line-height: 42px;
+				    text-align: left;
+				    margin-left: 20px;
+					margin-top: 5px;
+			}
+			.content1 .sgsg img {
+				width: 30px;
+				float: left;
+			}
+			.content1 div h2 {
+				text-align: left;
+			}
+			.content1 p {
+				margin-left: 20px;
+				margin-right: 20px;
+				line-height: 30px;
+				text-indent: 2em;
+				text-align: left;
+				font-size: 15px;
+			}
+			.content1 .sgsg {
+				width: 850px;
+				margin: 0 auto;
+				border-bottom: 4px solid #0099cc;
+				margin-top: 6px;
+			}
+			.content1 .imgs div {
+				float: left;
+				width: 210px;
+				height: 250px;
+				text-align: left;
+				margin-left: 72px;
+				border: 1px solid #000000;
+				padding-left: 6px;
+				padding-top: 4px;
+				margin-top: 5px;
+			}
+			.content1 .imgs img{
+				width: 190px;
+				height: 200px;
+				border: lpx solid white;
+			}
+			.content1 .imgs {
+				width: 918px;
+				height: 545px;
+			}
+			.content1 .imgs p {
+				margin-left: 0px;
+				margin-right: 0px;
+				line-height: 30px;
+				font-size: 13px;
+				text-indent: 0;
+			}
+		
+			.content1 .imgs .one1, .content1 .imgs .two2 {
+				margin-left: 50px;
+			}
+			#script {
+				width: 200px;
+				height: 22px;
+			}
+			.imgs div {
+				
+				transition: transform 0.4s;
+			}
+			.imgs div img:hover {
+				
+				transform: translate(-6px, -4px);
+			}
+			
+			/* 页尾 */
+			.end {
+				background: url(素材/footer-bg.jpg);
+				width: 1200px;
+				height: 100px;
+				
+			}
+			.end div {
+				margin: 0 auto;
+				width: 548px;
+				height: 50px;
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body onload="run()">
+		<div class="sgy">
+			<div class="title">
+				<img src="素材/logo.jpg" >
+			</div>
+			<div class="rearch">
+				<div id="">
+					<ul>
+						<li>首页 
+						</li>
+						<li>学院概况     
+							<ul>
+								<li><a href="">学院简介</a></li>
+								<li><a href="">现任领导</a></li>
+								<li><a href="">机构设置</a></li>
+								<li><a href="">学院视频 </a></li>
+								<li><a href="">联系电话</a></li>
+							</ul>
+						</li>
+						<li>教学管理
+							<ul>
+								<li><a href="">学院新闻</a></li>
+								<li><a href="">学院公告</a></li>
+								<li><a href="">学院相册</a></li>
+								<li><a href="">新闻人物</a></li>
+							</ul>
+						</li>
+						
+						<li>教学科研
+							<ul>
+								<li><a href="">师资队伍</a></li>
+								<li><a href="">教研教改</a></li>
+								<li><a href="">实训室建设</a></li>
+							</ul>
+						</li>
+						<li>学科专业
+							<ul>
+								<li><a href="">专业介绍</a></li>
+								<li><a href="">本科专业</a></li>
+								<li><a href="">专科专业</a></li>
+							</ul>
+						</li>
+						<li>党建活动
+							<ul>
+								<li><a href="">组织发展</a></li>
+								<li><a href="">党委概况</a></li>
+								<li><a href="">党建工作</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="content">
+				<div class="introduce">
+					<div class="">
+						<img src="素材/1.png" ><h2>个人介绍</h2>
+					</div>
+					<table border="lpx solid black" cellspacing="0" cellpadding="0">
+						<tr><td><img src="./素材/照片.jpg" width="200px"></td></tr>
+						<tr><td>班级：智能A1973班</td></tr>
+						<tr><td>姓名：刘剑锋</td></tr>
+						<tr><td>专业：软件工程</td></tr>
+						<tr><td id="script"></td></tr>
+					</table>
+					<img id="sg1" src="素材/mark.jpg" >
+				</div>
+				<div class="content1">
+					<div class="sgsg">
+						<img src="素材/2.png" >
+						<h2>当前位置</h2>
+					</div>
+					<h2 class="tit">欢迎光临我的主页</h2>
+					<div class="author">
+						作者张三 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;发布日期：00000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;点击:120
+					</div>
+					<h3 class="h33">和朋友相处的艺术</h3>
+					<p>在人生的长河当中，我们不可避免的会遇到很多的人，在遇到的人当中或多或少都有一些人成为了我们的朋友。关于朋友这个词，古来有之，与朋友相处的技巧更是五花八门，那么你觉得如何与朋友相处才是最合适的呢？</p>
+					<p>在生活中我喜欢将物品分类整理好，因为整理好了之后看起来一目了然，你需要什么就可以迅速的寻找到什么，方便快捷。从中我们或许可以有点灵感了，但是我很难去将我的朋友去分类。在生活中有和你学习工作形影相吊的朋友，有和你一起玩共同喜欢的游戏的朋友，有和你一起去购物逛街的朋友，也有和你一起去旅行徒步的朋友。那么你到底是否需要去分类呢？ 其实当你说出上面那些话的时候，是不是就已经进行了一个分类呢？</p>
+					<p>说到这里可能大家也都猜到了，我的观点就是朋友也是需要分类，和朋友相处的艺术就是能够把朋友放到合适的位置。在商店抢购了一双42码的鞋，但是我平时穿43码的鞋，即使能够穿进去我相信你的脚也未必会感觉舒服。朋友不是万能的，每一个朋友都有自己独立的生活，所以你的朋友不可能陪你完成你所以的想法，当你需要去干什么就去找相应的朋友一起，朋友也开心你也乐在其中。</p>
+					<p>在生活中，很多朋友间慢慢有矛盾，有争吵往往都是起源于此，你想去干嘛干嘛但是朋友没陪你去或者说是有时间但也没陪你去，于是慢慢的矛盾、争吵、疏远就来了。其实没必要如此，朋友还是你的朋友，只是每个人的兴趣不可能完全相同。</p>
+					<p>在人生的道路上，有些朋友来了又走了，有些只要你开口他一直在。朋友其实就是陪你在大家共同的道路上走一段路，到了新一段岔道口大家可能又要分开，所以不必介意朋友的离去，但要珍惜现在的朋友。</p>
+					<h3 class="last">我的相册：</h3>
+					<div class="imgs">
+						<div class="one1">
+							<img src="素材/丫山风景区.jpg" >
+							<p>地标：赣州市  名称：丫山风景区</p>
+						</div>
+						<div class="">
+							<img src="素材/宋城博物馆.jpg" >
+							<p>地标：赣州市  名称：宋城博物馆</p>
+						</div>
+						<div class="">
+							<img src="素材/将军园.jpg" >
+							<p>地标：赣州市  名称：将军园</p>
+						</div>
+						<div class="two2">
+							<img src="素材/度假庄园.jpg" >
+							<p>地标：赣州市  名称： 度假庄园</p>
+						</div>
+						<div class="">
+							<img src="素材/通天岩.jpg" >
+							<p>地标：赣州市  名称：通天岩</p>
+						</div>
+						<div class="">
+							<img src="素材/阳岭森林公园.jpg" >
+							<p>地标：赣州市  名称：阳岭森林公园</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="end">
+				<div class="">
+					<p>欢迎来南昌工学院官网， 建议1366x768以上分辨率，IE9 以上版本浏览器<br/>Copyright @ 2017,All Right Reserved 南昌工学院版权所有
+					<br/>  【核心制作：多媒体教研室】 在线学习提供技术支持</p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var interval = 600;
+			var num = 0;
+			var str = "厚德载物！";
+			function run(){
+				document.getElementById('script').innerHTML = str.substring(num, str.length) + "                    " + str ;
+				num++;
+				if (num>str.length)
+					num=0;
+				window.setTimeout("run();", interval);
+			}
+		</script>
+	</body>
+</html>
